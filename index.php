@@ -10,20 +10,20 @@ if($method == 'POST'){
 	$text = $json->result->parameters->text;
 
 	switch ($text) {
-		case 'hi':
-			$speech = "Hi, Nice to meet you";
+		case '안녕':
+			$speech = "안녕 나는 테스트 챗봇이야";
 			break;
 
-		case 'bye':
-			$speech = "Bye, good night";
+		case '방가워':
+			$speech = "나도 방가워";
 			break;
 
-		case 'anything':
-			$speech = "Yes, you can type anything here.";
+		case '바보':
+			$speech = "너도 바보야";
 			break;
 		
 		default:
-			$speech = "Sorry, I didnt get that. Please ask me something else.";
+			$speech = "미안 못 알아들었어.";
 			break;
 	}
 
